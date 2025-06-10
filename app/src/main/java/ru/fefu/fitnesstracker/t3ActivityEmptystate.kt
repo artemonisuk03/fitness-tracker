@@ -15,7 +15,7 @@ class t3ActivityEmptystate : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.t3_activity_emptystate)
 
-        bottomNav = findViewById(R.id.bottom_nav)
+        bottomNav = findViewById(R.id.bottomNavigation)
 
         if (savedInstanceState == null) {
             clearBackStackAndShow(FragmentSports.newInstance(), FragmentSportsTag)
@@ -40,7 +40,7 @@ class t3ActivityEmptystate : AppCompatActivity() {
         supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
 
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment, tag)
+            .replace(R.id.fragmentContainer, fragment, tag)
             .commit()
     }
 }

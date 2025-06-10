@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class FragmentMine : Fragment() {
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var activityRecycler: RecyclerView
 
     companion object {
         fun newInstance() = FragmentMine()
@@ -26,8 +26,8 @@ class FragmentMine : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView = view.findViewById(R.id.recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(context)
+        activityRecycler = view.findViewById(R.id.activityRecycler)
+        activityRecycler.layoutManager = LinearLayoutManager(context)
 
         val items = listOf(
             ActivityItem.Header("Вчера"),
@@ -50,10 +50,10 @@ class FragmentMine : Fragment() {
             )
         )
 
-        recyclerView.adapter = AdapterMine(items) { activityId ->
+        activityRecycler.adapter = AdapterMine(items) { activityId ->
             val fragment = t4FragmentSportsDetail.newInstance(activityId)
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, fragment)
+                .replace(R.id.fragmentContainer, fragment)
                 .addToBackStack(null)
                 .commit()
         }

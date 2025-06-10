@@ -26,7 +26,7 @@ class FragmentUsers : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView = view.findViewById(R.id.recycler_view)
+        recyclerView = view.findViewById(R.id.activityRecycler)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         val items = listOf(
@@ -44,7 +44,7 @@ class FragmentUsers : Fragment() {
         recyclerView.adapter = AdapterUsers(items) { activityId ->
             val fragment = t4FragmentSportsDetail.newInstance(activityId)
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, fragment)
+                .replace(R.id.fragmentContainer, fragment)
                 .addToBackStack(null)
                 .commit()
         }

@@ -48,7 +48,7 @@ class FragmentProfile : Fragment() {
 
     private fun navigateToChangePassword() {
         requireActivity().supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_container, FragmentChangePassword.newInstance())
+            replace(R.id.fragmentContainer, FragmentChangePassword.newInstance())
             addToBackStack("profile_to_password")
             commit()
         }
