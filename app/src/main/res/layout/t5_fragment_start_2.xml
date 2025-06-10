@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_map">
+
+    <TextView
+        android:id="@+id/typeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Велосипед"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/distanceText"/>
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="14 км"
+        android:textSize="24sp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/typeText"
+        app:layout_constraintBottom_toTopOf="@id/finishButton"/>
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="00:01:46"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/distanceText"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finishButton"
+        style="@style/Buttons"
+        android:layout_marginHorizontal="10dp"
+        app:icon="@drawable/finish"
+        app:iconGravity="textStart"
+        android:text="Закончить и вернуться"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distanceText" />
+
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

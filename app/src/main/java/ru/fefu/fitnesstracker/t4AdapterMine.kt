@@ -25,11 +25,11 @@ class AdapterMine(private val items: List<ActivityItem>, private val onItemClick
         return when (viewType) {
             TYPE_HEADER -> HeaderViewHolder(
                 LayoutInflater.from(parent.context)
-                    .inflate(R.layout.t3_item_header, parent, false)
+                    .inflate(R.layout.t4_item_header, parent, false)
             )
             else -> ActivityViewHolder(
                 LayoutInflater.from(parent.context)
-                    .inflate(R.layout.t3_item_activity_mine, parent, false)
+                    .inflate(R.layout.t4_item_activity_mine, parent, false)
             )
         }
     }

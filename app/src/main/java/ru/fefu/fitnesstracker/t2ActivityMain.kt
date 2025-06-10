@@ -11,9 +11,9 @@ class t2ActivityMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.t1_activity_main)
+        setContentView(R.layout.t2_activity_main)
         val registerButton: Button = findViewById(R.id.registerButton)
-        val loginText: TextView = findViewById(R.id.accountTextView)
+        val loginText: TextView = findViewById(R.id.accExistsText)
 
         registerButton.setOnClickListener {
             val intent = Intent(this, t2ActivityRegistration::class.java)

@@ -20,7 +20,7 @@ class FragmentMine : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.t2_fragment_mine, container, false)
+        return inflater.inflate(R.layout.t3_fragment_mine, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

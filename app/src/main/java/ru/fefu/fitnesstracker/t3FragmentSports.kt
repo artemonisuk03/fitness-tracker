@@ -1,11 +1,13 @@
 package ru.fefu.fitnesstracker
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -22,7 +24,7 @@ class FragmentSports : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.t2_fragment_sports, container, false)
+        return inflater.inflate(R.layout.t3_fragment_sports, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,8 +32,13 @@ class FragmentSports : Fragment() {
 
         viewPager = view.findViewById(R.id.viewPager)
         tabLayout = view.findViewById(R.id.tabLayout)
+        val startButton = view.findViewById<FloatingActionButton>(R.id.startButton)
 
         setupViewPager()
+
+        startButton.setOnClickListener {
+            startActivity(Intent(requireActivity(), t5ActivityStart::class.java))
+        }
     }
 
     private fun setupViewPager() {

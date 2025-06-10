@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/DefaultConstraintLayout" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/distanceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/imageBackarr"
+            style="@style/BackArrow"/>
+
+        <TextView
+            android:id="@+id/activityTypeText"
+            android:text="Велосипед"
+            style="@style/TitleToolbarTextView" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/distanceText"
+        style="@style/TitleToolbarTextView"
+        android:layout_marginTop="24dp"
+        android:text="14.32 км"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toTopOf="@id/timeAgoText"/>
+
+    <TextView
+        android:id="@+id/timeAgoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14 часов назад"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distanceText"
+        app:layout_constraintBottom_toTopOf="@id/durationText"/>
+
+    <TextView
+        android:id="@+id/durationText"
+        style="@style/TitleToolbarTextView"
+        android:layout_marginTop="24dp"
+        android:text="1 ч 42 мин"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/comment_text"
+        app:layout_constraintTop_toBottomOf="@id/timeAgoText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/durationText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Комментарий"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

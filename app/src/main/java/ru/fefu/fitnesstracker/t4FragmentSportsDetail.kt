@@ -24,7 +24,7 @@ class t4FragmentSportsDetail : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val layoutView = inflater.inflate(R.layout.t3_fragment_sports_detail, container, false)
+        val layoutView = inflater.inflate(R.layout.t4_fragment_sports_detail, container, false)
         val backButton = layoutView.findViewById<Button>(R.id.imageBackarr)
 
         backButton.setOnClickListener {

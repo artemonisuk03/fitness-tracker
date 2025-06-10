@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class t2ActivityRegistration : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.t1_activity_registration)
+        setContentView(R.layout.t2_activity_registration)
         val backArr: Button = findViewById(R.id.imageBackarr)
 
         backArr.setOnClickListener {

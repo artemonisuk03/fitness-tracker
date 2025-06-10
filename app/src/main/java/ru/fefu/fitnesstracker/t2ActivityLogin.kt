@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class t2ActivityLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.t1_activity_login)
+        setContentView(R.layout.t2_activity_login)
         val backarr: Button = findViewById(R.id.imageBackarr)
 
         backarr.setOnClickListener {

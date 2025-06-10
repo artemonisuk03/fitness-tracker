@@ -13,7 +13,7 @@ class t3ActivityEmptystate : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.t2_activity_emptystate)
+        setContentView(R.layout.t3_activity_emptystate)
 
         bottomNav = findViewById(R.id.bottom_nav)
 

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Fefufit"
         tools:targetApi="31">
         <activity
+            android:name=".t5ActivityStart"
+            android:exported="false" />
+        <activity
             android:name=".t3ActivityEmptystate"
             android:exported="false" />
         <activity

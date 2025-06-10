@@ -25,11 +25,11 @@ class AdapterUsers(private val items: List<ActivityItem>, private val onItemClic
         return when (viewType) {
             TYPE_HEADER -> HeaderViewHolder(
                 LayoutInflater.from(parent.context)
-                    .inflate(R.layout.t3_item_header, parent, false)
+                    .inflate(R.layout.t4_item_header, parent, false)
             )
             else -> ActivityViewHolder(
                 LayoutInflater.from(parent.context)
-                    .inflate(R.layout.t3_item_activity_users, parent, false)
+                    .inflate(R.layout.t4_item_activity_users, parent, false)
             )
         }
     }

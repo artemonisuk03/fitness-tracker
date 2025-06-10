@@ -19,8 +19,8 @@ class FragmentProfile : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val layoutView = inflater.inflate(R.layout.t2_fragment_profile, container, false)
-        val exitButton = layoutView.findViewById<Button>(R.id.exit)
+        val layoutView = inflater.inflate(R.layout.t3_fragment_profile, container, false)
+        val exitButton = layoutView.findViewById<Button>(R.id.exitButton)
         val saveButton = layoutView.findViewById<Button>(R.id.saveButton)
         val passButton = layoutView.findViewById<TextView>(R.id.passButton)
 

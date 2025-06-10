@@ -17,9 +17,9 @@ class FragmentChangePassword : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val layoutView = inflater.inflate(R.layout.t4_fragment_change_password, container, false)
+        val layoutView = inflater.inflate(R.layout.t5_fragment_change_password, container, false)
         val backButton = layoutView.findViewById<Button>(R.id.imageBackarr)
-        val applyBtn = layoutView.findViewById<Button>(R.id.apply)
+        val applyBtn = layoutView.findViewById<Button>(R.id.applyButton)
 
         backButton.setOnClickListener {
             parentFragmentManager.popBackStack()
