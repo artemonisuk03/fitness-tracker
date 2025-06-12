@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Fefufit"
         tools:targetApi="31">
         <activity
-            android:name=".t5ActivityStart"
+            android:name=".T5ActivityStart"
             android:exported="false" />
         <activity
-            android:name=".t3ActivityEmptystate"
+            android:name=".T3ActivityEmptystate"
             android:exported="false" />
         <activity
-            android:name=".t2ActivityMain"
+            android:name=".T2ActivityMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".t2ActivityLogin" />
-        <activity android:name=".t2ActivityRegistration" />
+        <activity android:name=".T2ActivityLogin" />
+        <activity android:name=".T2ActivityRegistration" />
     </application>
 
 </manifest>

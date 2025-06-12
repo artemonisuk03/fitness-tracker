@@ -9,24 +9,24 @@
     >
 
     <TextView
-        android:id="@+id/distance_text"
+        android:id="@+id/distanceText"
         style="@style/TitleToolbarTextView"
         android:text="14.32км"
-        app:layout_constraintBottom_toTopOf="@id/duration_text"
+        app:layout_constraintBottom_toTopOf="@id/durationText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/duration_text"
+        android:id="@+id/durationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="2 часа 46 минут"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/distance_text" />
+        app:layout_constraintTop_toBottomOf="@id/distanceText" />
 
     <TextView
-        android:id="@+id/type_text"
+        android:id="@+id/typeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Серфинг"
@@ -34,11 +34,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/time_ago_text"
+        android:id="@+id/timeAgoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="14 часов назад"
-        app:layout_constraintTop_toTopOf="@id/type_text"
+        app:layout_constraintTop_toTopOf="@id/typeText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
